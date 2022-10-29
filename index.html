@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Hotel</title>
+    <link rel="icon" href="./imgs/icon.png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Start Swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- ًWOW -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- Flatpickr -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- banner -->
+    <div class="banner fixed-top"></div>
+    <!-- banner -->
+    <!-- Start Header -->
+    <nav id="navbar" class="navbar container navbar-expand-lg bg-light py-3 shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand mb-3" href="#">
+          <img src="imgs/download.webp" alt="" />
+        </a>
+        <button
+          class="navbar-toggler y-color"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="menu">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link active text-black fw-semibold"
+              aria-current="page"
+              href="#home"
+              >Home</a
+            >
+            <a class="nav-link text-black fw-semibold" href="#about">ABOUT US</a>
+            <a class="nav-link text-black fw-semibold" href="#accomodation">Accomodation</a>
+            <a class="nav-link text-black fw-semibold" href="#">Gallery</a>
+            <a class="nav-link text-black fw-semibold" href="#blog">BLOG</a>
+            <a class="nav-link text-black fw-semibold" href="#">Elemests</a>
+            <a class="nav-link text-black fw-semibold" href="#">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div id="home" class="landing bg-transparent">
+      <div class="container">
+        <div class="content text-light text-center pb-5 mb-5">
+          <p class="wow bounceInDown" data-wow-delay=".5s">AWAY FROM MONOTONOUS LIFE</p>
+          <h2 class="py-3 wow bounceInDown" data-wow-delay=".3s">Relax Your Mind</h2>
+          <p class="p-2 mb-5 wow bounceInDown" data-wow-delay=".1s">
+            If you are looking at blank cassettes on the web, you may be very
+            confused at the difference in price. You may see some for as low as
+            $.17 each.
+          </p>
+          <a class="py-2 px-4 text-light y-bg-color mt-5 y-hover" href="#about"
+            >Get Started</a
+          >
+        </div>
+        <div class="book position-absolute w-100 wow bounceInLeft">
+          <div class="container p-5 black-bg-color">
+            <div class="row">
+              <div class="col-md-3">
+                <h2 class="text-light fw-semibold text-center text-md-start mb-4 mb-md-0">
+                  Book <br />
+                  Your Room
+                </h2>
+              </div>
+              <div class="col-md-9">
+                <div class="row">
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="mb-3">
+                      <input
+                        type="datetime"
+                        id="Arrival"
+                        placeholder="Arrival Date"
+                        class="w-100 p-2 text-muted bg-transparent border border-1 border-secondary border-opacity-25"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="datetime"
+                        id="Arrival"
+                        placeholder="Departure Date"
+                        class="w-100 p-2 text-muted bg-transparent border border-1 border-secondary border-opacity-25"
+                      />
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="mb-3">
+                      <select
+                        class="w-100 p-2 text-muted border border-1 border-secondary border-opacity-25 black-bg-color"
+                      >
+                        <option selected>Adult</option>
+                        <option >Old</option>
+                        <option >Younger</option>
+                        <option >Potato</ption>
+                      </select>
+                    </div>
+                    <div>
+                      <select
+                        class="w-100 p-2 text-muted border border-1 border-secondary border-opacity-25 black-bg-color"
+                      >
+                        <option selected>Child</option>
+                        <option >Child</option>
+                        <option >Baby</option>
+                        <option >Child</ption>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="mb-3">
+                      <select
+                        class="w-100 p-2 text-muted border border-1 border-secondary border-opacity-25 black-bg-color"
+                      >
+                        <option selected>Number of Rooms</option>
+                        <option >Room 01</option>
+                        <option >Room 02</option>
+                        <option >Room 03</ption>
+                      </select>
+                    </div>
+                    <div>
+                      <a href="" class="y-bg-color y-hover fw-semibold text-black py-2 w-100 d-block text-center">BOOK NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Accomodation -->
+    <div id="accomodation" class="accomodation py-5 bg-light">
+
+      <div class="container">
+        <div class="main-title text-center py-5">
+          <h2 class="mb-3 fw-semibold wow bounceInUp" data-wow-delay=".1s">Hotel Accomodation</h2>
+          <p class="text-muted wow bounceInUp" data-wow-delay=".2s">We all live in an age that belongs to the young at heart. Life that is becoming extremely fast,</p>
+        </div>
+        <div class="row py-5">
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay=".4s">
+            <div class="box text-center ">
+              <div class="img rounded mb-4 overflow-hidden position-relative">
+                <img src="./imgs/xroom1.jpg" alt="" class="img-fluid">
+                <a href="" class="y-hover">BOOK NOW</a>
+              </div>
+              <h5>Double Deluxe Room</h5>
+              <h3 class="main-color"> $250 <span>/night</span></h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay=".6s">
+            <div class="box text-center ">
+              <div class="img rounded mb-4 overflow-hidden position-relative">
+                <img src="./imgs/xroom2.jpg" alt="" class="img-fluid">
+                <a href="" class="y-hover">BOOK NOW</a>
+              </div>
+              <h5>Double Deluxe Room</h5>
+              <h3 class="main-color"> $250 <span>/night</span></h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay=".8s">
+            <div class="box text-center ">
+              <div class="img rounded mb-4 overflow-hidden position-relative">
+                <img src="./imgs/xroom3.webp" alt="" class="img-fluid">
+                <a href="" class="y-hover">BOOK NOW</a>
+              </div>
+              <h5>Double Deluxe Room</h5>
+              <h3 class="main-color"> $250 <span>/night</span></h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="1s">
+            <div class="box text-center ">
+              <div class="img rounded mb-4 overflow-hidden position-relative">
+                <img src="./imgs/xroom4.jpg" alt="" class="img-fluid">
+                <a href="" class="y-hover">BOOK NOW</a>
+              </div>
+              <h5>Double Deluxe Room</h5>
+              <h3 class="main-color"> $250 <span>/night</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Accomodation -->
+    <!-- Start Facilities -->
+    <div class="facilities py-5 position-relative">
+      <div class="main-title text-center py-5">
+        <h2 class="mb-3 fw-semibold text-light wow bounceInUp" data-wow-delay=".1s">Royal Facilities</h2>
+        <p class="text-muted wow bounceInUp" data-wow-delay=".2s">Who are in extremely love with eco friendly system.</p>
+      </div>
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".4s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-utensils fs-4 y-color me-3 "></i>
+                <h4 class="text-light m-0 fs-5">Restaurant</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".5s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-person-biking fs-4 y-color me-3 "></i>
+                <h4 class="text-light m-0 fs-5">Sports CLub</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".6s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-shirt fs-4 y-color me-2 "></i>
+                <h4 class="text-light m-0 fs-5">Swimming Pool</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".7s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-car fs-4 y-color me-3 "></i>
+                <h4 class="text-light m-0 fs-5">Rent a Car</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".8s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-xmarks-lines fs-4 y-color me-3 "></i>
+                <h4 class="text-light m-0 fs-5">Gymnesium</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 wow bounceInUp" data-wow-delay=".9s">
+            <div class="content p-5">
+              <div class="info d-flex align-items-center">
+                <i class="fa-solid fa-mug-hot fs-4 y-color me-3 "></i>
+                <h4 class="text-light m-0 fs-5">Bar</h4>
+              </div>
+              <p class="text-light mt-4">Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Facilities -->
+    <!-- Start About Us -->
+    <div id="about" class="about bg-light py-5 text-center text-md-start">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0 wow bounceInLeft" data-wow-delay=".6s">
+            <div class="box pe-0 pe-md-5">
+              <h2 class="fw-bold lh-base">About Us <br>
+                Our History <br>
+                Mission & Vision</h2>
+              <p class="text-muted py-4 lh-lg">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+              <a class="text-light py-2 px-4" href="">Request Custom Price</a>
+            </div>
+          </div>
+          <div class="col-md-6 wow pulse" data-wow-delay=".6s">
+            <div class="box">
+              <img class="img-fluid" src="./imgs/xabout_bg.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Testimonial -->
+    <div class="testimonial py-5 bg-light">
+
+      <div class="container">
+        <div class="main-title text-center py-5">
+          <h2 class="mb-3 fw-semibold wow bounceInUp" data-wow-delay=".1s">Testimonial from our Clients</h2>
+          <p class="text-muted wow bounceInUp" data-wow-delay=".2s">The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
+        </div>
+        <div class="swiper wow bounceInUp" data-wow-delay=".6s">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+      <div class="card d-flex">
+        <div class="img">
+          <img src="./imgs/xtesttimonial-1.jpg" alt="">
+        </div>
+        <div class="info">
+          <p class="text-muted">As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+          <h4>Fanny Spencer</h4>
+          <div class="icon">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+            </div>
+            <div class="swiper-slide">
+      <div class="card d-flex">
+        <div class="img">
+          <img src="./imgs/xtesttimonial-1.jpg" alt="">
+        </div>
+        <div class="info">
+          <p class="text-muted">As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+          <h4>Fanny Spencer</h4>
+          <div class="icon">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+            </div>
+            <div class="swiper-slide">
+      <div class="card d-flex">
+        <div class="img">
+          <img src="./imgs/xtesttimonial-1.jpg" alt="">
+        </div>
+        <div class="info">
+          <p class="text-muted">As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
+          <h4>Fanny Spencer</h4>
+          <div class="icon">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial -->
+    <!-- Start latest -->
+    <div id="blog" class="latest py-5 bg-light">
+
+      <div class="container">
+        <div class="main-title text-center py-5 mt-5">
+          <h2 class="mb-3 fw-semibold wow bounceInUp" data-wow-delay=".1s">latest posts from blog</h2>
+          <p class="text-muted wow bounceInUp" data-wow-delay=".2s">The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mx-auto wow bounceInUp" data-wow-delay=".4s">
+            <div class="content shadow p-0 rounded overflow-hidden">
+              <div class="img overflow-hidden mb-4">
+                <img src="./imgs/xblog-1.jpg" alt="" class="img-fluid w-100">
+              </div>
+              <div class="links mb-4">
+                <a class="py-1 px-3 border ms-2 text-black" href="">Travel</a>
+                <a class="py-1 px-3 border ms-2 text-black" href="">Life Style</a>
+              </div>
+              <div class="info ms-2">
+                <h4 class="fs-6 fw-bold mb-3">Low Cost Advertising</h4>
+                <p class="text-muted">Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
+                <p class="fw-semibold">31st January,2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mx-auto wow bounceInUp" data-wow-delay=".6s">
+            <div class="content shadow p-0 rounded overflow-hidden">
+              <div class="img overflow-hidden mb-4">
+                <img src="./imgs/xblog-2.jpg" alt="" class="img-fluid w-100">
+              </div>
+              <div class="links mb-4">
+                <a class="py-1 px-3 border ms-2 text-black" href="">Travel</a>
+                <a class="py-1 px-3 border ms-2 text-black" href="">Life Style</a>
+              </div>
+              <div class="info ms-2">
+                <h4 class="fs-6 fw-bold mb-3">Low Cost Advertising</h4>
+                <p class="text-muted">Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
+                <p class="fw-semibold">31st January,2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mx-auto wow bounceInUp" data-wow-delay=".8s">
+            <div class="content shadow p-0 rounded overflow-hidden">
+              <div class="img overflow-hidden mb-4">
+                <img src="./imgs/xblog-3.jpg" alt="" class="img-fluid w-100">
+              </div>
+              <div class="links mb-4">
+                <a class="py-1 px-3 border ms-2 text-black" href="">Travel</a>
+                <a class="py-1 px-3 border ms-2 text-black" href="">Life Style</a>
+              </div>
+              <div class="info ms-2">
+                <h4 class="fs-6 fw-bold mb-3">Low Cost Advertising</h4>
+                <p class="text-muted">Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
+                <p class="fw-semibold">31st January,2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End latest -->
+    <!-- Start Footer -->
+    <footer class="py-5 black-bg-color text-center text-md-start">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 p-1">
+            <div class="content p-3">
+              <h6 class="text-light fw-semibold mb-5">ABOUT AGENCY</h6>
+              <p class="text-muted">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 p-1">
+            <div class="content p-3">
+              <h6 class="text-light fw-semibold mb-5 text-center">ABOUT AGENCY</h6>
+              <div class="links d-flex justify-content-center ">
+                <ul class="p-0">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Feature</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                </ul>
+                <ul class="">
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 p-1">
+            <div class="content p-3">
+              <h6 class="text-light fw-semibold mb-5">ABOUT AGENCY</h6>
+              <p class="text-muted mb-5">For business professionals caught between high OEM price and mediocre print and graphic output,</p>
+
+              <div class="form row px-3">
+                <div class="col-10 p-0">
+                  <input type="email" placeholder="  Email Address" class="w-100 h-100 py-2 border opacity-25 bg-transparent">
+                </div>
+                <div class="col-2 p-0">
+                  <button class="y-bg-color text-light w-100 h-100">
+                    <i class="fa-solid fa-location-arrow"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 p-1">
+            <div class="content p-3">
+              <h6 class="text-light fw-semibold mb-5">ABOUT AGENCY</h6>
+              <div class="row px-3">
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (1).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (2).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (3).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (4).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (5).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (6).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (7).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+                <div class="col-4 p-0">
+                  <img src="./imgs/download (8).webp" alt="" class="w-100 h-100 pb-2 pe-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line my-5"></div>
+        <div class="footer-bottom d-flex align-items-center justify-content-between">
+          <p class="mb-5 mb-md-0">
+            Copyright ©2022 All rights reserved | This template is made with
+            <i class="fa-regular fa-heart"></i>
+            by 
+            <span class="y-color fw-semibold">Mohamed Ayman</span>
+          </p>
+          <ul class="d-flex align-items-center gap-4">
+            <li><a href=""><i class="fa-brands fa-facebook-f fs-6"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter fs-6"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-dribbble fs-6"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-behance fs-6"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    
+    <!-- Start Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Start Swiper -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Start WOW -->
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

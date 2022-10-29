@@ -1,0 +1,362 @@
+:root {
+  --main-color: #52c5fd;
+  --y-color: #f3c300;
+  --black-bg-color: #04091e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+.y-color {
+  color: var(--y-color);
+}
+.y-bg-color {
+  background-color: var(--y-color);
+}
+.y-hover {
+  transition: 0.3s;
+}
+.y-hover:hover {
+  background-color: #fab915;
+  color: white !important;
+}
+.black-bg-color {
+  background-color: var(--black-bg-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+::placeholder {
+  font-size: 14px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+.main-title p {
+  font-size: 14px;
+}
+/*  */
+.banner {
+  background: url(../imgs/banner_bg.jpg.webp) center center/cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -50;
+}
+/*  */
+/* Start Header */
+.navbar .navbar-collapse .nav-link {
+  font-size: 14px !important;
+  transition: 0.3s;
+}
+.navbar .navbar-collapse .nav-link.active,
+.navbar .navbar-collapse .nav-link:hover,
+.navbar .navbar-collapse .nav-link:focus {
+  color: var(--main-color) !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler {
+  box-shadow: none;
+  border: 0;
+}
+
+.menu {
+  position: relative;
+  width: 25px;
+  height: 17px;
+  overflow: hidden;
+}
+.menu .span1,
+.menu .span2,
+.menu .span3{
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+  left: 0;
+  transition: .5s;
+}
+.menu .span1 {
+  top: 0;
+}
+.menu .span2 {
+  top: 7px;
+}
+.menu .span3 {
+  top: 14px;
+}
+.close-span {
+  display: none;
+}
+.rotate-span1 {
+  transform: rotate(45deg);
+  top: 7px !important;
+}
+.rotate-span2 {
+  transform: rotate(-45deg);
+  top: 7px !important;
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  position: relative;
+  min-height: 130vh;
+  /* background: url(../imgs/banner_bg.jpg.webp) center center/cover; */
+}
+@media (max-width: 767px) {
+  .landing {
+    min-height: 165vh;
+  }
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(0 0 0 / 0.5);
+}
+.landing .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@media (max-width:767px) {
+  .landing .content {
+    top: 35%;
+  }
+}
+.landing .content h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .landing .content h2 {
+    font-size: 40px;
+  }
+}
+.landing .content p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 25px;
+  width: 700px;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .landing .content p {
+    width: 100%;
+  }
+}
+.landing .book {
+  bottom: 0;
+  left: 0;
+}
+.landing .book input:focus {
+  outline: none;
+}
+
+.landing .book select option {
+  background-color: white;
+  border-radius: 10px;
+  border: 0;
+}
+.landing .book select option:hover {
+  background-color: #04091ebd;
+}
+.landing .book input,
+.landing .black-bg-color select {
+  font-size: 14px;
+}
+/* End Landing */
+/* Start Accomodation */
+.accomodation .box span {
+  font-size: 12px;
+}
+.accomodation .box .img img {
+  width: 100%;
+  height: 260px;
+  transition: 1s;
+}
+
+.accomodation img:hover {
+  transform: scale(1.4);
+}
+.accomodation .box .img a {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: var(--y-color);
+  padding: 10px;
+  color: white;
+}
+/* End Accomodation */
+/* Start Facilities */
+.facilities {
+  position: relative;
+}
+.facilities:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #04091ed6;
+  z-index: -1;
+}
+.facilities .content {
+  border: 1px solid #777;
+  border-radius: 10px;
+  background-color: rgba(249, 249, 255, 0.102);
+}
+.facilities .content p {
+  font-size: 14px;
+  line-height: 25px;
+}
+/* End Facilities */
+/* Start About US */
+.about .box p {
+  font-size: 14px;
+}
+
+.about .box a {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+.about .box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--y-color);
+  z-index: -1;
+  transition: .3s;
+}
+.about .box a:hover::before {
+  width: 100%;
+}
+.about .box a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--black-bg-color);
+  z-index: -2;
+}
+/* End About US */
+/* End About US */
+.testimonial .card {
+  padding: 30px;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width:767px) {
+  .testimonial .card {
+    flex-direction: column;
+  }
+}
+.testimonial .card img {
+  width: 80px;
+  height: 80px;
+}
+.testimonial .card .icon svg{
+  font-size: 14px;
+  color: #f3c300;
+} 
+.testimonial .card p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.testimonial .card h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* End About US */
+
+/* Start latest */
+.latest .content img {
+  transition: .7s;
+}
+.latest .content img:hover {
+  transform: scale(1.2) rotate(8deg);
+}
+
+.latest .content .links a {
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+.latest .content .links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--y-color);
+  transition: .3s;
+  z-index: -1;
+}
+.latest .content .links a:hover::before {
+  width: 100%;
+}
+
+.latest .content p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+/* End latest */
+
+
+/* Start Footer */
+footer p,
+footer a {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #6c757d!important;
+  transition: .3s;
+  margin-bottom: 5px;
+}
+footer li {
+  margin-bottom: 7px;
+}
+footer a:hover {
+  color: var(--y-color) !important;
+}
+footer input::placeholder {
+  font-size: 14px;
+}
+footer input {
+  color: #fff;
+  font-size: 14px;
+}
+footer button {
+  border: 1px solid var(--y-color);
+  cursor: pointer;
+}
+footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+footer .footer-bottom {
+
+}
+@media (max-width: 767px) {
+  footer .footer-bottom {
+    flex-direction: column;
+
+  }
+}
+/* End Footer */
